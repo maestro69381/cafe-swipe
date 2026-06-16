@@ -53,8 +53,7 @@ export default function SwipeDeck({
             className="absolute inset-0"
             style={{ x, rotate }}
             drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={0.14}
+            dragConstraints={false}
             onDragEnd={handleDragEnd}
             whileTap={{ scale: 0.995 }}
           >
